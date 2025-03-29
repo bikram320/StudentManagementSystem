@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class MainSystem {
     public static void main(String[] args){
 
-        // Creating object of ManageStudent class for UpdatingRecord
-        ManageStudent manageStudent = new ManageStudent();
 
         //Scanner for user Input
         Scanner sc = new Scanner(System.in);
@@ -18,8 +16,8 @@ public class MainSystem {
             System.out.println("\n\n");
             System.out.println("--------Welcome To Student Management System--------");
             System.out.println("1.Add Student Record ");
-            System.out.println("2.Update Student Record ");
-            System.out.println("3.View Student Record ");
+            System.out.println("2.View Student Record ");
+            System.out.println("3.Update Student Record ");
             System.out.println("4.Delete Student Record ");
             System.out.println("5.Exit");
             System.out.println("-----------------------------------------------------");
@@ -49,25 +47,23 @@ public class MainSystem {
                         System.out.println("Enter a Phone of Student :");
                         Phone = sc.nextLine();
 
-                        manageStudent.AddStudent(new StudentData(symbolNo,name,course,Phone));
+                        ManageStudent.AddStudent(new StudentData(symbolNo,name,course,Phone));
                         break;
                     }catch (InputMismatchException e ){
                         System.out.println("Input Mismatch Exception Occur , please try again");
                     }catch(Exception e){
                         System.out.println("Error : "+e.getMessage());
-                    }finally {
-                        sc.nextLine();
                     }
 
                 case 2 :
-                    //manageStudent.UpdateRecord();
+                    ManageStudent.ViewStudentRecord();
                     break;
                 case 3 :
-//                    manageStudent.ViewStudentRecord();
+//                    ManageStudent.UpdateStudentRecord();
                     break;
 
                 case 4 :
-//                    manageStudent.DeleteStudentRecord( );
+//                    ManageStudent.DeleteStudentRecord( );
                     break;
 
                 case 5 :
