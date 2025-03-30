@@ -1,20 +1,20 @@
-Student Management System
-Functions :-
-1.Add record 
- -> Data is Directly added to Mysql Database
-2.View record
- -> You can view Record from DataBase based on your choice like 
-    ->Whole Record
-    ->Or Specific SymbolNo
-3.Update Record
- -> you can update Record based on Symbol no
-4.Delete Record 
- -> you can update Record based on Symbol no
-[Database Table will be Displayed before Deleting or Updating]
+Student Management System  
+Overview:-  
+The Student Management System (SMS) is a Java-based mini project that allows users to manage student records efficiently using a database. This system provides CRUD (Create, Read, Update, Delete) functionalities and ensures data integrity and security.  
 
-Technologies used :
-->OOPS 
-->Exception Handling
-->JDBC
-->MySql
-->Basic Java concept
+
+Features & Functionalities  
+✅ Add Student Records – Insert new student details into the database.  
+✅ View Student Records – Retrieve all student data or search by symbol number.  
+✅ Update Student Records – Modify existing student details.  
+✅ Delete Student Records – Remove a student record after verification.  
+✅ Symbol Number as Primary Key – Ensures unique student identification.  
+✅ Phone Number Uniqueness – Prevents duplicate entries.  
+✅ Database Integration with JDBC – Ensures efficient data handling.  
+✅ User-friendly Console Interface – Simplifies interaction with the system.  
+
+Tech Stack Used:-  
+Programming Language: Java (JDK 8 or later)  
+Database: MySQL  
+Database Connectivity: JDBC (Java Database Connectivity)  
+IDE Used: IntelliJ IDEA   
