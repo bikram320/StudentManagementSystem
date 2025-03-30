@@ -123,7 +123,7 @@ public class ManageStudent {
                     System.out.println("Invalid input! Please enter a valid symbol number.");
                 }
             }
-            sc.nextLine();
+
             System.out.println("Enter a Updated Data : ");
             System.out.print("Enter a Name :");
             String updateName = sc.nextLine();
@@ -151,7 +151,7 @@ public class ManageStudent {
                 if (rowAffected > 0) {
                     System.out.println("Successfully Updated");
                 } else {
-                    System.out.println("Data Can't Updated to Database .");
+                    System.out.println("Invalid symbol number.");
                 }
 
                 // Close resources
@@ -196,7 +196,7 @@ public class ManageStudent {
                 if (rowAffected > 0) {
                     System.out.println("Successfully Deleted Data .");
                 } else {
-                    System.out.println("Data Can't Deleted  from Database .");
+                    System.out.println("Invalid Symbol Number.");
                 }
 
                 // Close resources

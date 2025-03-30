@@ -20,10 +20,10 @@ public class MainSystem {
             System.out.println("4.Delete Student Record ");
             System.out.println("5.Exit");
             System.out.println("-----------------------------------------------------");
-            System.out.print("Enter your choice: ");
 
             int choice = -1;
             while (choice == -1) {
+                System.out.print("Enter your choice: ");
                 try {
                     choice = Integer.parseInt(sc.nextLine()); // Use nextLine and parse it to an integer
                     if (choice < 1 || choice > 5) {
