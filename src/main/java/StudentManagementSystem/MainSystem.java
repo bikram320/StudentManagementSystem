@@ -21,14 +21,14 @@ public class MainSystem {
             System.out.println("5.Exit");
             System.out.println("-----------------------------------------------------");
 
-            int choice = -1;
-            while (choice == -1) {
+            int choice = 0;
+            while (choice == 0) {
                 System.out.print("Enter your choice: ");
                 try {
                     choice = Integer.parseInt(sc.nextLine()); // Use nextLine and parse it to an integer
                     if (choice < 1 || choice > 5) {
                         System.out.println("Invalid choice, please enter a number between 1 and 5.");
-                        choice = -1; // Invalid choice, prompt again
+                        choice = 0; // Invalid choice, prompt again
                     }
                 } catch (NumberFormatException e) {
                     System.out.println("Input Mismatch Exception occurred, please try again.");

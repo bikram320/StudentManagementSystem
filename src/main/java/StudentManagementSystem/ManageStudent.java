@@ -29,8 +29,8 @@ public class ManageStudent {
     }
     public static void AddStudent(Scanner sc) {
         try {
-            int symbolNo = -1;
-            while (symbolNo == -1) {
+            int symbolNo = 0;
+            while (symbolNo == 0) {
                 System.out.println("Enter A symbol no of Student :");
                 try {
                     symbolNo = Integer.parseInt(sc.nextLine()); // Convert input to integer
@@ -114,8 +114,8 @@ public class ManageStudent {
             //Displaying the Record by which user can select and update it
             ManageStudent.ViewStudentRecord();
 
-            int updateSymbolNo = -1;
-            while (updateSymbolNo == -1) {
+            int updateSymbolNo = 0;
+            while (updateSymbolNo == 0) {
                 System.out.print("Enter a Symbol no. to update it's Record : ");
                 try {
                     updateSymbolNo = Integer.parseInt(sc.nextLine()); // Convert input to integer
@@ -170,8 +170,8 @@ public class ManageStudent {
 
             //Displaying the record before Deleting
             ManageStudent.ViewStudentRecord();
-            int deleteSymbolNo = -1;
-            while (deleteSymbolNo == -1) {
+            int deleteSymbolNo = 0;
+            while (deleteSymbolNo == 0) {
                 System.out.print("Enter a Symbol_No to Delete Record : ");
                 try {
                     deleteSymbolNo = Integer.parseInt(sc.nextLine()); // Convert input to integer
